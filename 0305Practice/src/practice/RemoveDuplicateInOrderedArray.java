@@ -24,7 +24,7 @@ public class RemoveDuplicateInOrderedArray {
   }
 
   /**
-   * 遍历数组，空间复杂度O(1),时间复杂度O(n)
+   * 遍历数组，空间复杂度O(1),时间复杂度O(n),不对，当出现多次重复数组时，会出现计算错误
    */
   public static int removeDuplicates02(int[] nums) {
     if(nums.length==0)
@@ -49,8 +49,8 @@ public class RemoveDuplicateInOrderedArray {
     
     public static void main(String[] args) throws Exception {
       int[] testNums01 = {1,1,2,3};
-      int[] testNums02 = {-1,1,2,3};
-      int[] testNums03 = {-1,1,2,3,3,5};
+      int[] testNums02 = {-1,1,2,2,3};
+      int[] testNums03 = {-1,1,1,2,3,3,5};
       System.out.println(removeDuplicates01(testNums01));
       System.out.println(removeDuplicates01(testNums02));
       System.out.println(removeDuplicates01(testNums03));
