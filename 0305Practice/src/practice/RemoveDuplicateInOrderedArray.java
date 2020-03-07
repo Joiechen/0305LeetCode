@@ -8,14 +8,14 @@ public class RemoveDuplicateInOrderedArray {
    * @return
    */
   public static int removeDuplicates01(int[] nums) {
-    if(nums.length==0)
+    if (nums.length==0)
     {
        return 0;
     }
 
     int i = 0;
-      for(int j=1;j<nums.length;j++){
-        if(nums[j]!=nums[i]){
+      for (int j=1; j<nums.length; j++) {
+        if (nums[j]!=nums[i]) {
           i++;
           nums[i] = nums[j];
         }
@@ -27,16 +27,16 @@ public class RemoveDuplicateInOrderedArray {
    * 遍历数组，空间复杂度O(1),时间复杂度O(n),不对，当出现多次重复数组时，会出现计算错误
    */
   public static int removeDuplicates02(int[] nums) {
-    if(nums.length==0)
+    if (nums.length == 0)
     {
        return 0;
     }
 
     int count = 1;
     int index = 0;
-    for(int i = 0;i<nums.length-1;i++)
+    for (int i = 0; i < nums.length-1; i++)
     {
-      if(nums[i]==nums[i+1]){
+      if (nums[i] == nums[i+1]) {
         continue;
       } else {
         index++;
