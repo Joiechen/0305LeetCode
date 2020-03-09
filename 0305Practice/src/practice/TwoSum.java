@@ -3,6 +3,7 @@ package practice;
 import java.util.HashMap;
 import java.util.Map;
 
+//Leetcode https://leetcode-cn.com/problems/two-sum/
 public class TwoSum {
 
   //时间和空间复杂度O(n),哈希表的时间复杂度O(1) 大大简化了运算时间
@@ -22,7 +23,7 @@ public class TwoSum {
 
   public static void main(String[] args) {
     int[] test01 = {2, 5, 6, 8, 10};
-    int[] result = twoSum01(test01,10);
+    int[] result = twoSum01(test01,6);
     for(int i=0; i<result.length; i++){
        System.out.println(result[i]);
     }

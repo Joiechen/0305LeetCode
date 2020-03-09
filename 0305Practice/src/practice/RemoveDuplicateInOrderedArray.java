@@ -1,5 +1,6 @@
 package practice;
 
+//leetcode https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
 public class RemoveDuplicateInOrderedArray {
 
   /**

@@ -2,6 +2,7 @@ package practice;
 
 import java.util.Arrays;
 
+//Leetcode https://leetcode-cn.com/problems/merge-sorted-array/
 public class MergeSortedArray {
 
   //取nums1的m长度和nums2的n长度，合并为一个Array
