@@ -21,6 +21,20 @@ public class TwoSum {
     throw new IllegalArgumentException("No two sum solution");
 }
 
+//时间和空间复杂度O(n)
+public static int[] twoSum02(int[] nums, int target) {
+  Map<Integer,Integer> map = new HashMap<>();
+  for(int i = 0; i < nums.length; i++){
+    int complement = target - nums[i];
+    if(map.containsKey(complement)){
+      return new int[] {map.get(complement),i};
+    }
+    map.put(nums[i],i);
+  }
+
+  throw new IllegalArgumentException("No match two sum");
+}
+
   public static void main(String[] args) {
     int[] test01 = {2, 5, 6, 8, 10};
     int[] result = twoSum01(test01,6);
